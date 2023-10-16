@@ -28,6 +28,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<UserModel> register(@RequestBody UserModel newUser) {
         userService.sendUserToKafka("register-user", newUser);
+        System.out.println(newUser.toString());
         return ResponseEntity.ok(newUser);
     }
 }

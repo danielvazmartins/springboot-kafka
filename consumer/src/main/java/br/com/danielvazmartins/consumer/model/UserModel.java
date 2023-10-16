@@ -1,4 +1,4 @@
-package br.com.danielvazmartins.producer.model;
+package br.com.danielvazmartins.consumer.model;
 
 import lombok.Data;
 
